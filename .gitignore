@@ -1,0 +1,14 @@
+# Ignorar los entornos virtuales
+.venv/
+venv/
+env/
+
+# Ignorar archivos de compilación
+__pycache__/
+*.pyc
+
+# Ignorar configuraciones de editor
+.vscode/
+
+# Ignorar archivos de dependencias (si los gestionas con pip)
+*.egg-info/
