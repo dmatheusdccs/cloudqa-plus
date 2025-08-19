@@ -1,76 +1,157 @@
-QA End-to-End Automation Framework - SauceDemo + AWS
-Descripción del Proyecto
-Este proyecto tiene como objetivo crear un framework de automatización de pruebas QA para una aplicación de ejemplo llamada SauceDemo, utilizando herramientas modernas como Playwright y Selenium. El framework está diseñado para ser flexible, escalable y capaz de ejecutarse de manera eficiente en entornos locales o en la nube (AWS).
+QA End-to-End Automation Framework - SauceDemo + BigCommerce + AWS
 
-Estructura del Proyecto
-El proyecto está estructurado de la siguiente manera:
+Python
+
+
+
+Playwright
+
+
+
+Selenium
+
+
+
+AWS
+
+
+
+Pytest
+
+
+
+MIT License
+
+
+
+
+Project Description
+
+This repository contains a QA End-to-End automation framework for testing web applications, including SauceDemo and BigCommerce.
+
+It uses Playwright, Selenium, and Jinja2 templates for dynamic reports, and integrates with AWS services to scale test execution in cloud environments.
+
+
+
+Tech Stack
+
+
+Python – main programming language
+
+Playwright – browser automation (Chromium, Firefox, WebKit)
+
+Selenium – traditional browser automation
+
+Jinja2 – dynamic templates for test reports
+
+AWS Services:
+
+Lambda (serverless functions)
+
+API Gateway (HTTP/REST APIs)
+
+DynamoDB (NoSQL database)
+
+
+
+HTML & CSS – for test reports and UI templates
+
+
+
+Features
+
+
+End-to-End automation for SauceDemo and BigCommerce
+
+Supports UI, API, Integration, Performance, Security, Regression, Usability, and Compatibility tests
+
+Real-time webhook processing via AWS Lambda
+
+Dynamic HTML reports using Jinja2 templates
+
+Screenshots and video recording of test runs
+
+Cloud integration for scalable test execution
+
+
+
+Project Structure
+cloudqa-plus/
+│
+├── TESTS_CASES/
+│ ├── API TEST/
+│ ├── UI TEST/
+│ ├── I COMPATIBILITY TEST/
+│ ├── INTEGRATION TEST/
+│ ├── PERFORMANCE TEST/
+│ ├── REGRESSION TEST/
+│ ├── SECURITY TEST/
+│ └── USABILITY TEST/
+│
+├── reports/ # Generated test reports
+├── pipeline/ # CI/CD configuration files
+├── dashboards/ # Test dashboards
+├── alerts/ # Notification configurations
+├── infra/ # Infrastructure files (AWS setup)
+├── venv/ # Python virtual environment
+├── requirements.txt # Project dependencies
+└── README.md # This file
 
 copy
 download
-cloudqa-plus/
-│
-├── tests/
-│   ├── ui/
-│   │   └── pages/
-│   └── api/
-│
-├── reports/
-├── pipeline/
-├── dashboards/
-├── alerts/
-├── infra/
-│
-├── requirements.txt
-├── .env
-└── README.md
-Dependencias
-El proyecto usa un entorno virtual de Python para gestionar las dependencias. Asegúrate de crear y activar el entorno virtual antes de instalar las librerías necesarias.
 
-Instalación del Entorno Virtual
-Crear el entorno virtual:
+---
+
+## Virtual Environment Setup
+**Windows:**
+```bash
+python -m venv venv
+venv\Scripts\activate
+Linux/Mac:
 
 copy
 download
 python -m venv venv
-Activar el entorno virtual:
-
-En Windows:
-copy
-download
-venv\Scripts\activate
-Actualizar pip:
+source venv/bin/activate
+Upgrade pip:
 
 copy
 download
 pip install --upgrade pip
-Instalar Dependencias
-Para instalar las librerías necesarias, ejecuta:
-
+Install Dependencies
 copy
 download
 pip install -r requirements.txt
-Esto instalará las siguientes librerías esenciales para el proyecto:
+Essential libraries:
 
-pytest: Framework de pruebas.
-selenium: Automatización de pruebas para interfaces web.
-webdriver-manager: Gestión automática de controladores de navegador.
-pytest-xdist: Ejecución paralela de pruebas.
-pytest-html: Generación de informes en formato HTML.
-pytest-mock: Herramienta para realizar pruebas controladas con mocks.
-pytest-cov: Medición de la cobertura de pruebas.
-playwright: Automación de navegadores modernos (Chromium, Firefox, WebKit).
-Instalar Navegadores para Playwright
-Después de instalar Playwright, necesitas instalar los navegadores compatibles (Chromium, Firefox, WebKit) con el siguiente comando:
+pytest – testing framework
+selenium – browser automation
+webdriver-manager – automatic driver management
+pytest-xdist – parallel execution
+pytest-html – HTML reports
+pytest-mock – mocks for tests
+pytest-cov – test coverage
+playwright – modern browser automation
+jinja2 – dynamic report templates
+Install Playwright browsers:
 
 copy
 download
 python -m playwright install
-Estructura de Carpetas
-La estructura de carpetas está organizada de la siguiente manera para facilitar el mantenimiento del proyecto:
+How to Run Tests
+Run all tests:
 
-tests/: Contiene las pruebas, separadas en subcarpetas como ui para pruebas de interfaz de usuario y api para pruebas de API.
-reports/: Aquí se generarán los informes de las pruebas.
-pipeline/: Archivos y configuraciones relacionadas con la integración continua (CI/CD).
-dashboards/: Archivos y paneles relacionados con los informes y métricas de pruebas.
-alerts/: Configuraciones para notificaciones y alertas durante las pruebas.
-infra/: Archivos relacionados con la infraestructura (por ejemplo, configuración de AWS).
+copy
+download
+pytest
+Run specific folder:
+
+copy
+download
+pytest TESTS_CASES/API\ TEST/TESTS/
+Topics / Tags
+python, playwright, selenium, jinja2, aws, automation, qa, e2e-tests, bigcommerce, saucedemo
+
+License
+MIT License
+
