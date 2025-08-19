@@ -33,28 +33,15 @@ It uses Playwright, Selenium, and Jinja2 templates for dynamic reports, and inte
 
 
 
-Tech Stack
+## Tech Stack
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
+![Jinja2](https://img.shields.io/badge/Jinja2-B41717?style=for-the-badge&logo=jinja&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-Python – main programming language
-
-Playwright – browser automation (Chromium, Firefox, WebKit)
-
-Selenium – traditional browser automation
-
-Jinja2 – dynamic templates for test reports
-
-AWS Services:
-
-Lambda (serverless functions)
-
-API Gateway (HTTP/REST APIs)
-
-DynamoDB (NoSQL database)
-
-
-
-HTML & CSS – for test reports and UI templates
 
 
 
@@ -97,8 +84,7 @@ cloudqa-plus/
 ├── requirements.txt # Project dependencies
 └── README.md # This file
 
-copy
-download
+
 
 ---
 
@@ -109,18 +95,15 @@ python -m venv venv
 venv\Scripts\activate
 Linux/Mac:
 
-copy
-download
+
 python -m venv venv
 source venv/bin/activate
 Upgrade pip:
 
-copy
-download
+
 pip install --upgrade pip
 Install Dependencies
-copy
-download
+
 pip install -r requirements.txt
 Essential libraries:
 
@@ -135,19 +118,16 @@ playwright – modern browser automation
 jinja2 – dynamic report templates
 Install Playwright browsers:
 
-copy
-download
+
 python -m playwright install
 How to Run Tests
 Run all tests:
 
-copy
-download
+
 pytest
 Run specific folder:
 
-copy
-download
+
 pytest TESTS_CASES/API\ TEST/TESTS/
 Topics / Tags
 python, playwright, selenium, jinja2, aws, automation, qa, e2e-tests, bigcommerce, saucedemo
