@@ -41,4 +41,3 @@ def test_get_product_list_valid_token():
     except Exception as err:
         print(f"Other error occurred: {err}")
         assert False, f"Other error: {err}"
-

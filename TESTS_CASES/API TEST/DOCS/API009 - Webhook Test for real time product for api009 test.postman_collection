@@ -1,0 +1,426 @@
+{
+	"info": {
+		"_postman_id": "bddfa22a-a303-4ddf-bd28-f0b5e1eaebe8",
+		"name": "Webhook Test for real time product for api009 test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34408693",
+		"_collection_link": "https://www.postman.com/spaceflight-engineer-15792304/workspace/cloudqa-plus/collection/34408693-bddfa22a-a303-4ddf-bd28-f0b5e1eaebe8?action=share&source=collection_link&creator=34408693"
+	},
+	"item": [
+		{
+			"name": "https://vld8a9pxe3.execute-api.us-east-1.amazonaws.com/Test_Real-Time_Product/cloudqa-webhook-transform",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Auth-Token",
+						"value": "roztjzwshb4wh76b3jfoqvardwkm50r",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": {\r\n    \"id\": 12345,\r\n    \"type\": \"physical\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vld8a9pxe3.execute-api.us-east-1.amazonaws.com/Test_Real-Time_Product/cloudqa-webhook-transform",
+					"protocol": "https",
+					"host": [
+						"vld8a9pxe3",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Test_Real-Time_Product",
+						"cloudqa-webhook-transform"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/hooks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "roztjzwshb4wh76b3jfoqvardwkm50r",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/hooks",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bigcommerce",
+						"com"
+					],
+					"path": [
+						"stores",
+						"hp1ltb9vhs",
+						"v3",
+						"hooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/hooks/30018010",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "roztjzwshb4wh76b3jfoqvardwkm50r",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/hooks/30018010",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bigcommerce",
+						"com"
+					],
+					"path": [
+						"stores",
+						"hp1ltb9vhs",
+						"v3",
+						"hooks",
+						"30018010"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/catalog/products/77",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "roztjzwshb4wh76b3jfoqvardwkm50r",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"price\": \"77.99\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/catalog/products/77",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bigcommerce",
+						"com"
+					],
+					"path": [
+						"stores",
+						"hp1ltb9vhs",
+						"v3",
+						"catalog",
+						"products",
+						"77"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/catalog/products/103",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "roztjzwshb4wh76b3jfoqvardwkm50r",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"price\": \"7.99\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/catalog/products/103",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bigcommerce",
+						"com"
+					],
+					"path": [
+						"stores",
+						"hp1ltb9vhs",
+						"v3",
+						"catalog",
+						"products",
+						"103"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/catalog/products/104",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "roztjzwshb4wh76b3jfoqvardwkm50r",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"price\": \"5.99\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/catalog/products/104",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bigcommerce",
+						"com"
+					],
+					"path": [
+						"stores",
+						"hp1ltb9vhs",
+						"v3",
+						"catalog",
+						"products",
+						"104"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/catalog/products/118",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "roztjzwshb4wh76b3jfoqvardwkm50r",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"price\": \"19.99\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/catalog/products/118",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bigcommerce",
+						"com"
+					],
+					"path": [
+						"stores",
+						"hp1ltb9vhs",
+						"v3",
+						"catalog",
+						"products",
+						"118"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/hooks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "roztjzwshb4wh76b3jfoqvardwkm50r",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"scope\": \"store/product/updated\",\r\n  \"destination\": \"https://vld8a9pxe3.execute-api.us-east-1.amazonaws.com/Test_Real-Time_Product/cloudqa-webhook-transform\",\r\n  \"is_active\": true,\r\n  \"headers\": {\r\n    \"X-Auth-Token\": \"roztjzwshb4wh76b3jfoqvardwkm50r\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/hooks",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bigcommerce",
+						"com"
+					],
+					"path": [
+						"stores",
+						"hp1ltb9vhs",
+						"v3",
+						"hooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/hooks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "roztjzwshb4wh76b3jfoqvardwkm50r",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"scope\": \"store/product/updated\",\r\n  \"destination\": \"https://vld8a9pxe3.execute-api.us-east-1.amazonaws.com/Test_Real-Time_Product/cloudqa-webhook-transform\",\r\n  \"is_active\": true,\r\n  \"headers\": {\r\n    \"X-Auth-Token\": \"roztjzwshb4wh76b3jfoqvardwkm50r\"\r\n  }\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/hooks",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bigcommerce",
+						"com"
+					],
+					"path": [
+						"stores",
+						"hp1ltb9vhs",
+						"v3",
+						"hooks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

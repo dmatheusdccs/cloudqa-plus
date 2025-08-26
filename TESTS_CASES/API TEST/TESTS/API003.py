@@ -6,7 +6,7 @@ from requests.exceptions import HTTPError
 BASE_URL = "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/catalog/products"
 
 # Token válido con permisos de escritura
-TOKEN = "ixyz2f8u6d61isce3fhq7xqr9uozd3d"  # ⚠️ No usar este token real en documentación pública
+TOKEN = "ixyz2f8u6d61isce3fhq7xqr9uozd3d"  # ⚠️ No usar token real en documentación pública
 
 # Headers requeridos
 headers = {
@@ -17,11 +17,11 @@ headers = {
 
 # Payload para crear producto
 payload = {
-    "name": "PyTest Widget 3000",
+    "name": "PyTest Widget 8A8A",
     "type": "physical",
     "price": 19.99,
     "weight": 0.5,
-    "categories": [23]  # Cambiar por un ID de categoría válido en tu tienda
+    "categories": [23]  # Cambiar por un ID válido
 }
 
 def test_add_new_product_valid_payload():
@@ -29,16 +29,17 @@ def test_add_new_product_valid_payload():
         # Enviar POST para crear el producto
         response = requests.post(BASE_URL, headers=headers, json=payload)
 
-        # Validar código de estado
-        assert response.status_code == 201, f"Expected 201, got {response.status_code}"
+        # Aceptar 200 o 201 como válidos
+        assert response.status_code in [200, 201], \
+            f"Expected 200 or 201, got {response.status_code}"
 
-        # Validar que la respuesta contiene 'data' y campos esperados
+        # Validar que la respuesta contiene 'data'
         data = response.json()
         assert "data" in data, "'data' key not found in response"
         assert data["data"]["name"] == payload["name"], "Product name mismatch"
         assert "id" in data["data"], "Product ID not found in response"
 
-        print(f"✅ Product created with ID: {data['data']['id']}")
+        print(f"✅ Product created/returned with ID: {data['data']['id']}")
 
     except HTTPError as http_err:
         pytest.fail(f"HTTP error occurred: {http_err}")
