@@ -1,26 +1,139 @@
-# Ignorar los entornos virtuales
+# ==================== PYTHON ====================
+# Entornos virtuales
 .venv/
 venv/
 env/
+ENV/
 
-# Ignorar archivos de compilación
+# Archivos de compilación y cache
 __pycache__/
-*.pyc
-
-# Ignorar configuraciones de editor
-.vscode/
-.idea/
-
-# Ignorar la caché de pytest
-.pytest_cache/
-
-# Ignorar archivos de dependencias (si los gestionas con pip)
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
 *.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# Ignorar archivos de log
-*.log
+# ==================== IDE & EDITORES ====================
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+.ropeproject
 
-# Archivos temporales de pruebas
+# VS Code
+.vscode/
+*.swp
+*.swo
+*~
+
+# Otros IDEs
+.nb-gradle/
+**/.nb-gradle-properties
+
+# ==================== CREDENCIALES & SENSIBLE ====================
+# AWS
+.aws/
+credentials/
+config
+*.pem
+*.key
+
+# Variables de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Carpeta de credenciales (cualquier ubicación)
+credentials/
+Credentials/
+**/credentials/
+**/Credentials/
+
+# ==================== TESTING & REPORTES ====================
+# Pytest
+.pytest_cache/
+.mypy_cache/
 .tox/
 .nox/
 .coverage
+coverage.xml
+*.cover
+htmlcov/
+.coverage.*
+test/
+
+
+# Playwright
+playwright-report/
+test-results/
+
+# Reportes de pruebas
+reports/html/
+reports/junit/
+*.report.html
+
+# ==================== SISTEMA & TEMPORALES ====================
+# Sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Temporales
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# ==================== PAQUETES & DEPENDENCIAS ====================
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python packages
+*.tar.gz
+*.whl
+
+# ==================== OTROS ====================
+# Archivos grandes
+*.largefile
+
+# Archivos de base de datos local
+*.sqlite3
+*.db
+
+# Archivos de migración (si usas DB)
+migrations/
