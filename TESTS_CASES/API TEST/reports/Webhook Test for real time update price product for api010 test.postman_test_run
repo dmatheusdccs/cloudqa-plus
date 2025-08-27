@@ -1,0 +1,52 @@
+{
+	"id": "13070de6-7fe8-45c9-976e-d9cd9a298eed",
+	"name": "Webhook Test for real time product for api009 test",
+	"timestamp": "2025-08-21T17:04:59.259Z",
+	"collection_id": "34408693-bddfa22a-a303-4ddf-bd28-f0b5e1eaebe8",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-08-21T17:04:53.648Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "514bd641-3ddb-4596-a4bb-df64c46c3cdd",
+			"name": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/catalog/products/77",
+			"url": "https://api.bigcommerce.com/stores/hp1ltb9vhs/v3/catalog/products/77",
+			"time": 887,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				921,
+				757,
+				1390,
+				908,
+				887
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		}
+	],
+	"count": 5,
+	"totalTime": 4863,
+	"collection": {
+		"requests": [
+			{
+				"id": "514bd641-3ddb-4596-a4bb-df64c46c3cdd",
+				"method": "PUT"
+			}
+		]
+	}
+}
