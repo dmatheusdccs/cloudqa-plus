@@ -64,27 +64,27 @@ Cloud integration for scalable test execution
 
 
 Project Structure
+```bash
 cloudqa-plus/
 │
 ├── TESTS_CASES/
-│ ├── API TEST/
-│ ├── UI TEST/
-│ ├── I COMPATIBILITY TEST/
-│ ├── INTEGRATION TEST/
-│ ├── PERFORMANCE TEST/
-│ ├── REGRESSION TEST/
-│ ├── SECURITY TEST/
-│ └── USABILITY TEST/
+│   ├── API TEST/
+│   ├── UI TEST/
+│   ├── COMPATIBILITY TEST/
+│   ├── INTEGRATION TEST/
+│   ├── PERFORMANCE TEST/
+│   ├── REGRESSION TEST/
+│   ├── SECURITY TEST/
+│   └── USABILITY TEST/
 │
-├── reports/ # Generated test reports
-├── pipeline/ # CI/CD configuration files
-├── dashboards/ # Test dashboards
-├── alerts/ # Notification configurations
-├── infra/ # Infrastructure files (AWS setup)
-├── venv/ # Python virtual environment
-├── requirements.txt # Project dependencies
-└── README.md # This file
-
+├── reports/          # Generated test reports
+├── pipeline/         # CI/CD configuration files
+├── dashboards/       # Test dashboards
+├── alerts/           # Notification configurations
+├── infra/            # Infrastructure files (AWS setup)
+├── venv/             # Python virtual environment
+├── requirements.txt  # Project dependencies
+└── README.md         # This file
 
 
 ---
