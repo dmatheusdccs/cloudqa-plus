@@ -1,3 +1,8 @@
+![status](https://img.shields.io/badge/status-in%20progress-yellow)
+
+> This project is currently **under construction** — new features and improvements are on the way!
+
+
 QA End-to-End Automation Framework - SauceDemo + BigCommerce + AWS
 
 Python
